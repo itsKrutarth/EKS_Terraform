@@ -13,13 +13,13 @@ terraform {
     }
   }
 
-#   backend "s3" {
-#     bucket = aws_s3_bucket.backendBucket.Name
-#     key = "eks.dev/terraform.tfstate"
-#     region = "us-east-2"
-#     encrypt = true
-#     use_lockfile = true
-#   }
+  backend "s3" {
+    bucket = "my-tf-test-first-bucket-2r7j83"
+    key = "eks/ev/terraform.tfstate"
+    region = "us-east-2"
+    encrypt = true
+    use_lockfile = true
+  }
 }
 
 
