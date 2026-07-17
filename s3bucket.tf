@@ -6,12 +6,12 @@ resource "random_string" "randstr" {
   upper = false
 }
 
-resource "aws_s3_bucket" "backendBucket" {
-    bucket = "my-tf-test-first-bucket-${random_string.randstr.result}"
+# resource "aws_s3_bucket" "backendBucket" {
+#     bucket = "my-tf-test-first-bucket-${random_string.randstr.result}"
 
-    tags = {
-        Name        = "First demo bucket"
-        Environment = "Dev"
-        Owner = "Krutarth Patel"
-    }
-}
+#     tags = {
+#         Name        = "First demo bucket"
+#         Environment = "Dev"
+#         Owner = "Krutarth Patel"
+#     }
+# }

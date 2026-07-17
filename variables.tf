@@ -17,6 +17,12 @@ variable "cluster_name" {
   default = "eks-demo"
 }
 
+variable "aws_region" {
+  description = "aws region to deploy resources"
+  type = string
+  default = "us-east-2"
+}
+
 variable "cluster_version" {
   description = "Kubernetes minor version to use for the eks cluster"
   type = string
